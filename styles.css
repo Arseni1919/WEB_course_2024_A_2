@@ -1,3 +1,194 @@
-* {
-    background-color: aliceblue;
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+p h3 {
+    color: red;
 }
+
+.title {
+    color: blue;
+    margin: 20px;
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 20px;
+}
+
+body {
+    /*background-color: papayawhip;*/
+    /*background-color: #e0b6b6;*/
+    background-color: rgb(240, 240, 255);
+    /*background-image: url("pics/bg.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center top;*/
+
+}
+
+.my-div {
+    /*font-size: 30px;*/
+    /*font-weight: bold;*/
+    /*font-family: Arial, serif;*/
+    /*font-family: Georgia, serif;*/
+    /*font-family: Tahoma, serif;*/
+    /*font-family: Arial, sans-serif;*/
+
+    font: normal 25px Arial, sans-serif;
+
+    line-height: 1.6em;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+#middleParagraph {
+    background-color: black;
+    color: white;
+
+    /*border-top: red 5px solid;*/
+    /*border-bottom: orange 5px dotted;*/
+    border: red 5px solid;
+    border-radius: 10px;
+    margin-top: 50px;
+    /*padding-left: 20px;*/
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    /*padding: 10px 20px 30px 40px;*/
+    /*padding: 100px 20px;*/
+    padding: 20px;
+}
+
+.blueText {
+    color: cornflowerblue;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#middleParagraph span {
+    color: yellow;
+}
+
+#par1 h2 {
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+}
+
+#par1:hover {
+    background-color: papayawhip;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+a:visited {
+    background-color: purple;
+}
+
+a:hover {
+    border: 2px black solid;
+    color: black;
+    background-color: white;
+}
+
+a:active {
+    background-color: red;
+    border: 2px red solid;
+    color: white;
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+/*.my-form input[type='text'], .my-form textarea {*/
+/*    padding: 8px;*/
+/*    width: 80%;*/
+/*}*/
+
+.my-form input, .my-form textarea {
+    padding: 8px;
+    width: 80%;
+}
+.my-form input[type='submit']{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    width: 84%;
+}
+
+.p-box {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url("pics/bg3.jpg");
+}
+
+
+.p-box h1 {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+.p-box h2 {
+    position: absolute;
+    left: 40px;
+    top: 400px;
+}
+
+/*.p-box h2 {*/
+/*    position: fixed;*/
+/*    left: 40px;*/
+/*    top: 400px;*/
+/*}*/
+
+ul li:nth-child(even) {
+    background-color: red;
+}
+
+
+@media (max-width: 900px) {
+    ul, .p-box {
+        display: none;
+    }
+
+    body {
+        background-color: blue;
+        color: yellow;
+    }
+}
+
+@media (max-width: 600px) {
+    ul, .p-box {
+        display: none;
+    }
+
+    body {
+        background-color: #333;
+        color: white;
+    }
+}
+
+
+
+
+
