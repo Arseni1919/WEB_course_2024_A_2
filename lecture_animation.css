@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+.box {
+    background: white;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: auto;
+    top: 20px;
+
+    /*animation-name: my-animation;*/
+    /*animation-duration: 4s;*/
+
+    /*transition-property: background-color, border-radius;*/
+    /*transition-property: all;*/
+    /*transition-duration: 1s;*/
+    /*transition-delay: 0.5s;*/
+
+    /*animation-iteration-count: 4;*/
+    /*animation-iteration-count: infinite;*/
+
+    /*animation-fill-mode: forwards;*/
+
+    /*animation-direction: alternate;*/
+    /*animation-direction: reverse;*/
+
+    /*animation-timing-function: linear;*/
+    /*animation-timing-function: ease-in;*/
+    /*animation-timing-function: ease-out;*/
+
+    /*transition-property: background-color, border-radius;*/
+    transition-property: all;
+    /*transition-property: background-color, border-radius, transform;*/
+    transition-duration: 1s;
+
+    /*transition-delay: 0.5s, 1s;*/
+
+
+}
+
+.box:hover {
+    background-color: red;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+    /*transform: scaleX(3);*/
+    border: 3px solid yellow;
+}
+
+@keyframes my-animation {
+    0%{
+        background-color: white;
+        left: 0;
+        top: 0;
+        border-radius: 0 0 0 0;
+    }
+    25%{
+        background-color: red;
+        left: 50px;
+        top: 0;
+        border-radius: 50% 0 0 0;
+    }
+    50%{
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        border-radius: 50% 50% 0 0;
+    }
+    75%{
+        background-color: blue;
+        left: 0;
+        top: 50px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100%{
+        background-color: white;
+        left: 0;
+        top: 0;
+        border-radius: 50% 50% 50% 50%;
+    }
+}
