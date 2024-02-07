@@ -1,0 +1,27 @@
+.bg-dark {
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px;
+}
+
+#my-form {
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: white solid 1px;
+    width: 100px;
+}
+
+.error {
+    padding: 10px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    font-size: 2em;
+}
