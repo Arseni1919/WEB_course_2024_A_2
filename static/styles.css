@@ -1,0 +1,28 @@
+
+body {
+    background-color: cadetblue;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.green {
+    color: greenyellow;
+}
+
+.black {
+    color: black;
+}

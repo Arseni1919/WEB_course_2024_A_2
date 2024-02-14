@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Base{% endblock %}</title>
+  {% include('styles.html') %}
+</head>
+<body>
+{% include('header.html') %}
+
+{% block main %}{% endblock %}
+{% block nav %}{% endblock %}
+
+{% include('footer.html') %}
+</body>
+</html>

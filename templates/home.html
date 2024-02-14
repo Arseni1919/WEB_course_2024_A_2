@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Home{% endblock %}
+
+
+
+{% block main %}
+  <h1 class="{% if name %} green {% else %} black {% endif %}">Welcome to Home Page!</h1>
+    {% if name %}
+          <h2>Welcome to you: {{name | upper() | lower()}} {{second_name | default('***', false) }}</h2>
+            <h3>My hobbies:</h3>
+            <ul>
+                {% for hobby in hobbies %}
+                    <li>{{hobby}}</li>
+                {% endfor %}
+            </ul>
+
+            <h3>My details:</h3>
+            <ol>
+                {% for k, v in user_details.items() %}
+
+                <li class="item">{{k}}: the value is {{v}}</li>
+                {% endfor %}
+            </ol>
+
+    {% else %}
+        <h3>Welcome new user!</h3>
+    {% endif %}
+{% endblock %}
