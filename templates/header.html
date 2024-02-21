@@ -2,5 +2,9 @@
   <a href="/">Home Page</a>
   <a href="/about">About Page</a>
   <a href="/profile">Profile Page</a>
-  <a href="/">Another Page</a>
+  {% if session.get('logged_in') %}
+    <a href="/logout">Log out</a>
+  {% else %}
+    <a href="/login">Log in</a>
+  {% endif %}
 </header>

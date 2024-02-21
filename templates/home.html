@@ -6,9 +6,11 @@
 
 
 {% block main %}
+
   <h1 class="{% if name %} green {% else %} black {% endif %}">Welcome to Home Page!</h1>
-    {% if name %}
-          <h2>Welcome to you: {{name | upper() | lower()}} {{second_name | default('***', false) }}</h2>
+    {% if  session.get('logged_in') %}
+          <h2>Your name is: {{session.get('username') | upper() | lower()}}</h2>
+            <h2>Your email is: {{session.get('email')}}</h2>
             <h3>My hobbies:</h3>
             <ul>
                 {% for hobby in hobbies %}
@@ -27,4 +29,5 @@
     {% else %}
         <h3>Welcome new user!</h3>
     {% endif %}
+{{ super() }}
 {% endblock %}

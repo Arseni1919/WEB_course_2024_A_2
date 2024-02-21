@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Login{% endblock %}
+
+{% block main %}
+
+{% if session.get('logged_in') %}
+    <h2>Your Username: {{ session.get('username') }}</h2>
+    <h2>Your Email: {{ session.get('email') }}</h2>
+
+{% else %}
+
+<!--<h2>(GET) To log in please fill the form:</h2>-->
+
+<!--<form method="GET" action="/login">-->
+<!--    <h3>Username:</h3>-->
+<!--    <input type="text" name="username">-->
+<!--    <br>-->
+<!--    <h3>Email:</h3>-->
+<!--    <input type="email" name="email">-->
+<!--    <br>-->
+<!--    <h3>Password:</h3>-->
+<!--    <input type="password" name="password">-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <input type="submit" value="Submit">-->
+<!--</form>-->
+
+<h2>(POST) To log in please fill the form:</h2>
+
+<form method="POST" action="/login">
+    <h3>Username:</h3>
+    <input type="text" name="username">
+    <br>
+    <h3>Email:</h3>
+    <input type="email" name="email">
+    <br>
+    <h3>Password:</h3>
+    <input type="password" name="password">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+{% endif %}
+{% endblock %}
