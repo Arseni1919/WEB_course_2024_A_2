@@ -3,8 +3,9 @@
   <a href="/about">About Page</a>
   <a href="/profile">Profile Page</a>
   {% if session.get('logged_in') %}
-    <a href="/logout">Log out</a>
+  <a href="/logout">Log out</a>
   {% else %}
     <a href="/login">Log in</a>
+  <a href="/mongodb">MongoDB</a>
   {% endif %}
 </header>
